@@ -30,7 +30,7 @@
 - ORM Events on AsyncSession
 - ORM Events on async_sessionmaker
 - Asyncio and Events
-
+- 
  SQLAlchemy    SQLAlchemy        SQLAlchemy          SQLAlchemy   plain
   asyncio      asyncio           ORM/Core            asyncio      asyncio
   (public      (internal)                            (internal)
@@ -48,6 +48,7 @@ call  ->     |            |                        |           |
              |  ->  ->    |       sync adapted     |~~~~~~~~~~~|
              |            |               DBAPI -> |  ->  ->   | asyncio
              |            |                        |           | driver -> database
+
 
 ## Using awaitable-only driver methods in connection pool and other events
 # Using multiple asyncio event loops
