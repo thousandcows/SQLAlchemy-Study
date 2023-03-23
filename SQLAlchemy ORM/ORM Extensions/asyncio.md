@@ -9,9 +9,9 @@
   - when using lazy-loaded relationships
 - Why it's important to prevent it?
   - to prevent unexpected and inefficient database accesses + improve the performance and scalability of the application
-  - d
+
 - Techniques to prevent implicit I/O
-  - Collections -> [Write Only Relationships](https://docs.sqlalchemy.org/en/20/orm/large_collections.html#write-only-relationship)
+  - Collections -> [Write Only Relationships](https://docs.sqlalchemy.org/en/20/orm/large_collections.html#write-only-relationship), [Querying Items](https://docs.sqlalchemy.org/en/20/orm/large_collections.html#querying-items)
   - Lazy-loaded relationship with more care
     - declare relationships with lazy="raise"
     - use eager loading to load collections
