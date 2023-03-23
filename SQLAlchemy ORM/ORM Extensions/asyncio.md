@@ -29,8 +29,8 @@
 - Core Events on AsyncEngine
 - ORM Events on AsyncSession
 - ORM Events on async_sessionmaker
+- Asyncio and Events
 
-- asyncio and events
  SQLAlchemy    SQLAlchemy        SQLAlchemy          SQLAlchemy   plain
   asyncio      asyncio           ORM/Core            asyncio      asyncio
   (public      (internal)                            (internal)
