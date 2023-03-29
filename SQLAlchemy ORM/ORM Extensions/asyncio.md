@@ -51,9 +51,16 @@ call  ->     |            |                        |           |
 
 
 ## Using awaitable-only driver methods in connection pool and other events
-# Using multiple asyncio event loops
+## Using multiple asyncio event loops
 - What could happen if the same engine is shared in different event loops?
   - the ORM engine maintains stateful connections to the database, and it could interfere with each other's state
   - leading to inconsistent data, concurrency issues and etc.
 - The application should not let multiple event loops share same AsyncEngine when using default pool implementation.
 - Disabling pooling using [NullPool](https://docs.sqlalchemy.org/en/20/core/pooling.html#sqlalchemy.pool.NullPool) prevents the engine from using any connection more than once.
+
+## Using asyncio scoped session
+- What happens if the application uses the scoped pattern?
+- [Contextual/Thread-local Sessions](https://docs.sqlalchemy.org/en/20/orm/contextual.html#unitofwork-contextual)
+
+## Using the Inspector to inspect schema objects
+- [Reflecting Database Objects](https://docs.sqlalchemy.org/en/20/core/reflection.html#metadata-reflection)
