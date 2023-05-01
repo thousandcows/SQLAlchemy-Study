@@ -1,10 +1,6 @@
 import asyncio
 
-from sqlalchemy import Column
-from sqlalchemy import MetaData
-from sqlalchemy import select
-from sqlalchemy import String
-from sqlalchemy import Table
+from sqlalchemy import Column, MetaData, String, Table, select
 from sqlalchemy.ext.asyncio import create_async_engine
 
 meta = MetaData()

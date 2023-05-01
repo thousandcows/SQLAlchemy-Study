@@ -18,7 +18,7 @@
       - [selectinload()](https://docs.sqlalchemy.org/en/20/orm/queryguide/relationships.html#sqlalchemy.orm.selectinload)
   - Set Session.expire_on_commit = False
   - Use [AsyncSession.refresh()](https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html#sqlalchemy.ext.asyncio.AsyncSession.refresh) to load lazy-loaded relationship explicitly under asyncio
-  
+
 ## Running Synchronous Methods and Functions under ayncio
 - [AsyncSession.run_sync()](https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html#sqlalchemy.ext.asyncio.AsyncSession.run_sync)
   - run Python function inside of greenlet
@@ -30,7 +30,7 @@
 - ORM Events on AsyncSession
 - ORM Events on async_sessionmaker
 - Asyncio and Events
-- 
+-
  SQLAlchemy    SQLAlchemy        SQLAlchemy          SQLAlchemy   plain
   asyncio      asyncio           ORM/Core            asyncio      asyncio
   (public      (internal)                            (internal)
